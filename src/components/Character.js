@@ -4,8 +4,8 @@ import React from 'react';
 const Character = props => {
     return(
         <div>
-            {props.bio.name}
-            <button onClick={() => props.openBio(props.bio.name)}>
+            {props.char.name}
+            <button onClick={() => props.openBio(props.char)}>
                 See Bio
                 </button>
         </div>
