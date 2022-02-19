@@ -1,16 +1,21 @@
 import React from 'react'
+import styled from 'styled-components';
+
+const StyledBio = styled.div`
+    background-color: 'black';
+    color: '##FFE81F';
+`
 
 const Bio = props => {
     //props: bio & closeBio
     let objBio = props.bio;
-    console.log(objBio);
     
     return(
-        <div className='bio-container'>
+        <StyledBio className='bio-container'>
             {
                 objBio &&
                 <>
-                    <h2>Bio of {objBio.name}</h2>
+                    <h2>Bio</h2>
                     <p>Name: {objBio.name}</p>
                     <p>Birth Year: {objBio.birth_year}</p>
                     <p>Gender: {objBio.gender}</p>
@@ -22,7 +27,7 @@ const Bio = props => {
                     <button onClick={() => props.closeBio()}>Clear</button>
                 </>
             }
-        </div>
+        </StyledBio>
     )
         
 }

@@ -27,7 +27,6 @@ const App = () => {
   //set up button functions
   const openBio = (character) => {
     setCurrentCharacter(character);
-    console.log(currentCharacter)
   }
   const closeBio = () => {
     setCurrentCharacter({});
