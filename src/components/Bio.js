@@ -2,14 +2,13 @@ import React from 'react'
 import styled from 'styled-components';
 
 const StyledBio = styled.div`
-    background-color: 'black';
-    color: '##FFE81F';
+    background-color: #FFE81F;
 `
 
 const Bio = props => {
     //props: bio & closeBio
     let objBio = props.bio;
-    
+
     return(
         <StyledBio className='bio-container'>
             {
