@@ -3,12 +3,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledCharacter = styled.div`
-    background-color: #FFE81F;
-    margin: 0 2rem;
-    padding: 0.5rem;
-    border: 1.5px solid black;
+    background-color: #FFE81F;  
+    margin: 1rem 2rem;
+    padding: 2px;
+    padding-bottom: 7px;
+    border: 2px solid black;
     display: flex;
-    justify-content: space-between;
+    flex-flow: column;
+    align-items: center;
 `
 
 const Character = props => {
