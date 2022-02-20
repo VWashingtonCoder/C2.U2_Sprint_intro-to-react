@@ -3,6 +3,13 @@ import styled from 'styled-components';
 
 const StyledBio = styled.div`
     background-color: #FFE81F;
+    margin: 1rem 2rem;
+    padding: 2px;
+    padding-bottom: 7px;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;;
 `
 
 const Bio = props => {
